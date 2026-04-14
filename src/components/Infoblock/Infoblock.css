@@ -1,0 +1,58 @@
+/* Layout */
+.info-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Text */
+.info-text {
+  max-width: 550px;
+}
+
+/* List */
+.info-list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.info-list li {
+  margin: 10px 0;
+  color: var(--text-secondary);
+}
+
+/* Stats */
+.info-stats {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+  padding: 20px;
+}
+
+.stat h3 {
+  color: var(--primary);
+}
+
+/* Visual */
+.info-visual {
+  width: 350px;
+  height: 350px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .info-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-stats {
+    justify-content: center;
+  }
+}

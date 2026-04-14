@@ -1,0 +1,44 @@
+/* Slider wrapper */
+.logo-slider {
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+/* Track */
+.logo-track {
+  display: flex;
+  gap: 40px;
+  animation: scroll 20s linear infinite;
+}
+
+/* Logo */
+.logo-item {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-item img {
+  max-width: 100px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+/* Hover */
+.logo-item img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

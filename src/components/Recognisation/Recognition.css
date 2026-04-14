@@ -1,0 +1,30 @@
+.recognition-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card tweak */
+.recognition-card {
+  text-align: center;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.recognition-card h3 {
+  color: var(--text-primary);
+  font-size: 16px;
+}
+
+/* Hover */
+.recognition-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .recognition-grid {
+    grid-template-columns: 1fr;
+  }
+}

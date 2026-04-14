@@ -1,0 +1,55 @@
+.project-track {
+  text-align: center;
+}
+
+/* Grid */
+.track-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* Card override (minimal) */
+.track-card {
+  text-align: left;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Number */
+.track-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* Title */
+.track-card h3 {
+  margin: 10px 0;
+  color: var(--text-primary);
+}
+
+/* Text */
+.track-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Hover */
+.track-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .track-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .track-grid {
+    grid-template-columns: 1fr;
+  }
+}

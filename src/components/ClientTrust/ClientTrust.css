@@ -1,0 +1,82 @@
+/* Slider */
+.trust-slider {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+/* Track */
+.trust-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+/* Card */
+.trust-card {
+  min-width: 280px;
+  max-width: 300px;
+  transition: 0.3s;
+}
+
+/* Text */
+.trust-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* User */
+.trust-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Avatar */
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Name */
+.trust-user h4 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* Role */
+.trust-user span {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Hover */
+.trust-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Smooth animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .trust-card {
+    min-width: 240px;
+  }
+}

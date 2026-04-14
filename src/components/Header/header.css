@@ -1,0 +1,103 @@
+/* Navbar base */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 15px 0;
+  z-index: 1000;
+  transition: 0.3s;
+}
+
+/* Scroll state (use global glass style) */
+.navbar.scrolled {
+  background: rgba(10, 10, 15, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Flex */
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Nav */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Links */
+.nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover underline (use gradient var if exists) */
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: var(--gradient-primary);
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.nav a:hover {
+  color: var(--text-primary);
+}
+
+/* CTA button spacing */
+.nav-btn {
+  margin-left: 10px;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--card-bg);
+    padding: 20px;
+    display: none;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

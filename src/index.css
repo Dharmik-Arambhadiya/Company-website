@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: manrope;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Circular;
+    src: url(/font/CircularStd-Medium.otf);
+}
+
+@font-face {
+    font-family: CircularLight;
+    src: url(/font/CircularStd-Light.otf);
+}
+
+@font-face {
+    font-family: CircularBold;
+    src: url(/font/LINETO-CIRCULAR-PRO-BOLD.woff);
+}
+
+@font-face {
+    font-family: CircularMedium;
+    src: url(/font/LINETO-CIRCULAR-PRO-MEDIUM.woff);
+}
+
+.site-button {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #131623;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 11.7px 30px;
+
+    &:hover {
+        img {
+            transition: 0.5s all;
+            transform: rotate(-45deg) scale(1.1);
+        }
+    }
+}

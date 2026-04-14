@@ -1,0 +1,27 @@
+.dp-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.dp-card {
+  transition: 0.3s;
+}
+
+.dp-number {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.dp-card h3 {
+  margin: 10px 0;
+}
+
+.dp-card p {
+  color: var(--text-secondary);
+}
+
+.dp-card:hover {
+  transform: translateY(-6px);
+}
