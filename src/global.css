@@ -1,46 +1,154 @@
 /* =========================
-   🌊 GLOBAL THEME SYSTEM
+   🌊 MIRO DESIGN SYSTEM
    ========================= */
 
 :root {
-  /* 🎨 COLOR PALETTE */
-  --primary-dark: #03045e;
-  --primary: #023e8a;
-  --secondary: #0077b6;
-  --accent: #0096c7;
-
-  --accent-light: #00b4d8;
-  --cyan: #48cae4;
-  --sky: #90e0ef;
-  --soft: #ade8f4;
-  --light: #caf0f8;
-
-  /* 🌑 BACKGROUND */
-  --bg-main: #03045e;
-  --bg-section: linear-gradient(180deg, #03045e, #023e8a);
-  --bg-card: rgba(255, 255, 255, 0.05);
-
-  /* 📝 TEXT */
-  --text-primary: #ffffff;
-  --text-secondary: #90e0ef;
-  --text-muted: #caf0f8;
-
-  /* 🌈 GRADIENTS */
-  --gradient-main: linear-gradient(90deg, #0077b6, #00b4d8);
-  --gradient-soft: linear-gradient(90deg, #48cae4, #ade8f4);
-  --gradient-full: linear-gradient(
-    90deg,
-    #03045e,
-    #023e8a,
-    #0077b6,
-    #00b4d8,
-    #90e0ef
-  );
-
-  /* ✨ EFFECTS */
+  /* =========================
+     🎨 COLOR PALETTE
+     ========================= */
+  
+  /* Primary */
+  --tw-color-near-black: #1c1c1e;
+  --tw-color-white: #ffffff;
+  --tw-color-blue-450: #5b76fe;
+  --tw-color-actionable-pressed: #2a41b6;
+  
+  /* Semantic */
+  --tw-color-success-accent: #00b473;
+  
+  /* Neutral */
+  --tw-color-slate: #555a6a;
+  --tw-color-input-placeholder: #a5a8b5;
+  --tw-color-border: #c7cad5;
+  --tw-color-ring: rgb(224, 226, 232);
+  
+  /* Pastel Accents - Light */
+  --tw-color-coral-light: #ffc6c6;
+  --tw-color-rose-light: #ffd8f4;
+  --tw-color-teal-light: #c3faf5;
+  --tw-color-orange-light: #ffe6cd;
+  --tw-color-yellow-light: #fff5c8;
+  --tw-color-moss-light: #d4f0d8;
+  --tw-color-pink-light: #fde0f0;
+  --tw-color-red-light: #fbd4d4;
+  
+  /* Pastel Accents - Dark */
+  --tw-color-coral-dark: #600000;
+  --tw-color-teal-dark: #187574;
+  --tw-color-yellow-dark: #746019;
+  
+  /* Background */
+  --bg-main: #ffffff;
+  --bg-section: #ffffff;
+  --bg-card: var(--tw-color-white);
+  
+  /* Legacy mappings */
+  --primary-dark: #1c1c1e;
+  --primary: #1c1c1e;
+  --secondary: #5b76fe;
+  --accent: #5b76fe;
+  
+  --accent-light: #5b76fe;
+  --cyan: #c3faf5;
+  --sky: #5b76fe;
+  --soft: #ffd8f4;
+  --light: #ffe6cd;
+  
+  /* Text */
+  --text-primary: #1c1c1e;
+  --text-secondary: #555a6a;
+  --text-muted: #a5a8b5;
+  
+  /* Gradients */
+  --gradient-main: linear-gradient(90deg, #5b76fe, #7c92ff);
+  --gradient-soft: linear-gradient(90deg, #c3faf5, #ffd8f4);
+  --gradient-full: linear-gradient(90deg, #5b76fe, #c3faf5, #ffd8f4, #ffe6cd, #fff5c8);
+  
+  /* =========================
+     🔤 TYPOGRAPHY
+     ========================= */
+  
+  /* Font Families */
+  --font-display: 'Roobert PRO', 'Inter', sans-serif;
+  --font-body: 'Noto Sans', 'Inter', sans-serif;
+  
+  /* Font Sizes */
+  --font-size-hero: 56px;
+  --font-size-section: 48px;
+  --font-size-card-title: 24px;
+  --font-size-subheading: 22px;
+  --font-size-feature: 18px;
+  --font-size-body: 18px;
+  --font-size-body-standard: 16px;
+  --font-size-button: 17.5px;
+  --font-size-caption: 14px;
+  --font-size-small: 12px;
+  --font-size-micro: 10.5px;
+  
+  /* Line Heights */
+  --line-height-tight: 1.15;
+  --line-height-normal: 1.35;
+  --line-height-body: 1.45;
+  --line-height-body-standard: 1.50;
+  
+  /* Letter Spacing */
+  --letter-spacing-hero: -1.68px;
+  --letter-spacing-section: -1.44px;
+  --letter-spacing-card-title: -0.72px;
+  --letter-spacing-subheading: -0.44px;
+  --letter-spacing-body-standard: -0.16px;
+  --letter-spacing-button: 0.175px;
+  --letter-spacing-small: -0.36px;
+  
+  /* =========================
+     📐 SPACING SYSTEM
+     ========================= */
+  
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-80: 80px;
+  --space-96: 96px;
+  --space-100: 100px;
+  --space-120: 120px;
+  
+  /* =========================
+     ⬜ BORDER RADIUS
+     ========================= */
+  
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-3xl: 40px;
+  --radius-full: 50px;
+  
+  /* =========================
+     ✨ EFFECTS
+     ========================= */
+  
   --blur: blur(14px);
   --radius: 18px;
   --transition: all 0.3s ease;
+  
+  /* Ring Shadow */
+  --ring-shadow: rgb(224, 226, 232) 0px 0px 0px 1px;
+  
+  /* Elevation */
+  --elevation-minimal: var(--ring-shadow);
 }
 
 /* =========================
@@ -56,8 +164,12 @@
 body {
   background: var(--bg-main);
   color: var(--text-primary);
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* =========================
@@ -65,7 +177,7 @@ body {
    ========================= */
 
 .section {
-  padding: 100px 20px;
+  padding: var(--space-100) var(--space-20);
   position: relative;
 }
 
@@ -79,17 +191,30 @@ body {
    ========================= */
 
 .title {
-  font-size: 42px;
-  font-weight: 700;
-  background: var(--gradient-main);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: var(--font-display);
+  font-size: var(--font-size-section);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-section);
+  color: var(--text-primary);
 }
 
 .subtitle {
-  font-size: 16px;
+  font-family: var(--font-body);
+  font-size: var(--font-size-feature);
+  font-weight: 400;
+  line-height: var(--line-height-normal);
   color: var(--text-secondary);
-  margin-top: 10px;
+  margin-top: var(--space-10);
+}
+
+.hero-text {
+  font-family: var(--font-display);
+  font-size: var(--font-size-hero);
+  font-weight: 400;
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-hero);
+  color: var(--text-primary);
 }
 
 /* =========================
@@ -98,16 +223,14 @@ body {
 
 .card {
   background: var(--bg-card);
-  backdrop-filter: var(--blur);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 25px;
+  border-radius: var(--radius-lg);
+  border: var(--ring-shadow);
+  padding: var(--space-24);
   transition: var(--transition);
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 40px rgba(0, 180, 216, 0.4);
 }
 
 /* =========================
@@ -115,61 +238,113 @@ body {
    ========================= */
 
 .btn-primary {
-  background: var(--gradient-main);
+  background: var(--tw-color-blue-450);
   color: white;
-  padding: 12px 24px;
-  border-radius: 10px;
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-sm);
   border: none;
   cursor: pointer;
   transition: var(--transition);
+  font-family: var(--font-display);
+  font-size: var(--font-size-button);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-button);
+  line-height: 1.29;
 }
 
 .btn-primary:hover {
-  opacity: 0.85;
+  background: var(--tw-color-actionable-pressed);
 }
 
 .btn-outline {
-  border: 1px solid var(--accent-light);
-  color: var(--accent-light);
-  padding: 12px 24px;
-  border-radius: 10px;
+  border: 1px solid var(--tw-color-border);
+  color: var(--text-primary);
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-sm);
   background: transparent;
   transition: var(--transition);
+  font-family: var(--font-display);
+  font-size: var(--font-size-button);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-button);
+  line-height: 1.29;
+  cursor: pointer;
 }
 
 .btn-outline:hover {
-  background: var(--accent-light);
-  color: #03045e;
+  border-color: var(--tw-color-blue-450);
+  color: var(--tw-color-blue-450);
+}
+
+.btn-dark {
+  background: var(--tw-color-near-black);
+  color: var(--tw-color-white);
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font-display);
+  font-size: var(--font-size-button);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-button);
+  line-height: 1.29;
 }
 
 /* =========================
-   ✨ GLOW EFFECT
+   📝 INPUT SYSTEM
    ========================= */
 
-.glow {
-  box-shadow: 0 0 60px rgba(0, 180, 216, 0.5);
+.input-field {
+  background: var(--tw-color-white);
+  border: 1px solid #e9eaef;
+  border-radius: var(--radius-sm);
+  padding: var(--space-16);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body-standard);
+  transition: var(--transition);
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--tw-color-blue-450);
+}
+
+.input-field::placeholder {
+  color: var(--tw-color-input-placeholder);
 }
 
 /* =========================
-    🌊 BACKGROUND GLOW
-    ========================= */
+   🎨 PASTEL SURFACES
+   ========================= */
 
-.bg-glow::before {
-  content: "";
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(0, 180, 216, 0.25), transparent 70%);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: blur(120px);
-  z-index: 0;
+.surface-coral {
+  background: var(--tw-color-coral-light);
+}
+
+.surface-rose {
+  background: var(--tw-color-rose-light);
+}
+
+.surface-teal {
+  background: var(--tw-color-teal-light);
+}
+
+.surface-orange {
+  background: var(--tw-color-orange-light);
+}
+
+.surface-yellow {
+  background: var(--tw-color-yellow-light);
+}
+
+.surface-moss {
+  background: var(--tw-color-moss-light);
 }
 
 /* =========================
-    🎬 ANIMATION UTILITIES
-    ========================= */
+   ✨ ANIMATION UTILITIES
+   ========================= */
 
 @keyframes fadeInUp {
   from {
@@ -233,24 +408,6 @@ body {
   }
 }
 
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-@keyframes borderGlow {
-  0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 180, 216, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 40px rgba(0, 180, 216, 0.6);
-  }
-}
-
 .animate-fade-in-up {
   animation: fadeInUp 0.6s ease-out forwards;
 }
@@ -298,8 +455,13 @@ body {
   .title {
     font-size: 30px;
   }
-
+  
+  .hero-text {
+    font-size: 36px;
+    letter-spacing: var(--letter-spacing-section);
+  }
+  
   .section {
-    padding: 70px 15px;
+    padding: 70px var(--space-15);
   }
 }

@@ -1,143 +1,388 @@
-.img-quote {
-    width: 53px;
-    height: 45px;
-}
-.about-us {
-    background-color: #F8EFEB;
-    padding: 150px 20px;
+/* =========================
+   ABOUT PAGE - MIRO DESIGN
+   ========================= */
 
-    .about-us-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h3,
-        p {
-            transition: all 0.7s ease;
-        }
-
-        h3 {
-            font-size: 54px;
-            font-family: 'Circular';
-            font-weight: 500;
-            margin: 0;
-        }
-
-        p {
-            font-size: 20px;
-            font-weight: 400;
-            margin: 0;
-            margin-top: 30px;
-            margin-bottom: 50px;
-        }
-    }
-
-    .about-us-container {
-        max-width: 1170px;
-        padding: 0 20px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-
-        .about-us-card {
-            max-width: 566px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: relative;
-            padding-left: 20px;
-
-            span {
-                font-size: 24px;
-                font-weight: 500;
-                font-family: Circular;
-                margin-bottom: 30px;
-            }
-
-            p {
-                margin: 0;
-                font-size: 16px;
-                font-weight: 400;
-                margin-bottom: 50px;
-            }
-
-            h2,
-            h3 {
-                margin: 0;
-            }
-
-            h2 {
-                font-size: 24px;
-                font-weight: 800;
-                margin-bottom: 20px;
-
-                a {
-                    margin-left: 20px;
-                }
-            }
-
-            h3 {
-                font-size: 18px;
-                font-weight: 500;
-            }
-
-            .img-quote {
-                transition: all 0.7s ease;
-                position: absolute;
-                top: 18%;
-                left: -18%;
-            }
-        }
-    }
+.about-page {
+  background: #ffffff;
+  padding-top: 80px;
 }
 
-@media screen and (max-width: 1240px) {
-    .about-us {
-        & .about-us-container {
-            & .about-us-card {
-                .img-quote {
-                    top: 3%;
-                    left: 3%;
-                }
-            }
-        }
-    }
+/* Hero Section */
+.about-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
 }
 
-@media screen and (max-width: 786px) {
-    .about-us {
-        padding: 80px 0;
+.about-hero-content h1 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1.68px;
+  color: #1c1c1e;
+  margin: 0 0 24px;
+}
 
-        .about-us-header {
-            padding: 0 20px;
+.about-hero-content p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #555a6a;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-            h3,
-            p {
-                transition: all 0.7s ease;
-                text-align: center;
-            }
-        }
+/* Section Label */
+.section-label {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #5b76fe;
+  display: block;
+  margin-bottom: 12px;
+}
 
-        .about-us-container {
-            flex-wrap: wrap;
-            justify-content: center;
+/* Story Section */
+.about-story {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
 
-            .about-us-card {
-                margin-top: 100px;
+.story-content h2 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1c1e;
+  margin: 0 0 24px;
+}
 
-                .img-quote {
-                    top: -20%;
-                    left: 47%;
-                }
+.story-content p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.60;
+  color: #555a6a;
+  margin: 0 0 20px;
+}
 
-                span,
-                p,
-                h2,
-                h3 {
-                    text-align: center;
-                    transition: all 0.7s ease;
-                }
-            }
-        }
-    }
+.story-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* Stats Section */
+.about-stats {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat-card {
+  background: #c3faf5;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-number {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1c1c1e;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555a6a;
+}
+
+/* Values Section */
+.about-values {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.values-header h2 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.value-card {
+  background: #ffffff;
+  border: 1px solid rgb(224, 226, 232);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: #5b76fe;
+  box-shadow: 0 4px 20px rgba(91, 118, 254, 0.1);
+}
+
+.value-card h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 12px;
+}
+
+.value-card p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #555a6a;
+  margin: 0;
+}
+
+/* Team Section */
+.about-team {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.team-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.team-header h2 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card {
+  display: flex;
+  background: #fde0f0;
+  border-radius: 24px;
+  overflow: hidden;
+  max-width: 800px;
+}
+
+.team-image {
+  flex: 0 0 350px;
+}
+
+.team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-info {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-info h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 8px;
+}
+
+.team-role {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #5b76fe;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.team-info p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #555a6a;
+  margin: 0 0 20px;
+}
+
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #1c1c1e;
+  text-decoration: none;
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.linkedin-link:hover {
+  color: #5b76fe;
+}
+
+.linkedin-link img {
+  width: 20px;
+  height: 20px;
+}
+
+/* CTA Section */
+.about-cta {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #c3faf5 0%, #ffd8f4 100%);
+  border-radius: 24px;
+}
+
+.about-cta h2 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1c1e;
+  margin: 0 0 16px;
+}
+
+.about-cta p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 18px;
+  color: #555a6a;
+  margin: 0 0 32px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-card {
+    flex-direction: column;
+  }
+
+  .team-image {
+    flex: none;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .about-hero-content p {
+    font-size: 18px;
+  }
+
+  .story-content h2,
+  .values-header h2,
+  .team-header h2 {
+    font-size: 28px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 24px 16px;
+  }
+
+  .stat-number {
+    font-size: 32px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-card {
+    margin: 0 20px;
+  }
+
+  .team-info {
+    padding: 24px;
+  }
+
+  .about-cta h2 {
+    font-size: 28px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .site-button,
+  .cta-buttons .site-button-outline {
+    width: 100%;
+    max-width: 250px;
+  }
 }

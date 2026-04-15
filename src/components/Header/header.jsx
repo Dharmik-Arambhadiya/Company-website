@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,32 +16,42 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location]);
+
+  const navItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Services', path: '/services' },
+    { label: 'Work', path: '/#work' },
+    { label: 'About', path: '/about' },
+    { label: 'Contact', path: '/contact' },
+  ];
+
   return (
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
-
       <div className="container nav-flex">
-
-        <div className="logo">
+        <Link to="/" className="logo">
           <span className="logo-text">Redlio</span>
           <span className="logo-dot"></span>
-        </div>
+        </Link>
 
         <nav className={menuOpen ? "nav active" : "nav"}>
-          {['Home', 'Services', 'Work', 'About', 'Contact'].map((item, i) => (
-            <a 
-              key={item} 
-              href="#" 
+          {navItems.map((item, i) => (
+            <Link 
+              key={item.label} 
+              to={item.path} 
               className="nav-link"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              {item}
+              {item.label}
               <span className="link-underline"></span>
-            </a>
+            </Link>
           ))}
-          <button className="btn-primary nav-btn btn-animate">
+          <Link to="/contact" className="site-button nav-btn btn-animate">
             Get Started
             <span className="btn-arrow">→</span>
-          </button>
+          </Link>
         </nav>
 
         <div 
@@ -50,9 +62,7 @@ export default function Header() {
           <span></span>
           <span></span>
         </div>
-
       </div>
-
     </header>
   );
 }

@@ -1,27 +1,127 @@
+.digital-planning {
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.section-subtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out 0.1s forwards;
+}
+
 .dp-grid {
   margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
 }
 
 .dp-card {
-  transition: 0.3s;
+  position: relative;
+  text-align: center;
+  padding: 30px 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dp-card.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dp-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  background: var(--gradient-main);
+  transform: translateX(-50%) scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 3px;
+}
+
+.dp-card:hover::before {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.dp-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 180, 216, 0.15);
+}
+
+.dp-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: rgba(0, 180, 216, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.dp-card:hover .dp-icon-wrapper {
+  background: var(--gradient-main);
+  transform: scale(1.1) rotate(360deg);
+}
+
+.dp-icon {
+  font-size: 30px;
 }
 
 .dp-number {
-  color: var(--primary);
-  font-weight: bold;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-light);
+  margin-bottom: 10px;
 }
 
 .dp-card h3 {
   margin: 10px 0;
+  color: var(--text-primary);
+  font-size: 18px;
 }
 
 .dp-card p {
   color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-.dp-card:hover {
-  transform: translateY(-6px);
+.dp-line {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-light), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.dp-card:hover .dp-line {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .dp-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .dp-grid {
+    grid-template-columns: 1fr;
+  }
 }

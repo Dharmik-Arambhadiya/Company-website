@@ -1,0 +1,352 @@
+/* =========================
+   CONTACT PAGE - MIRO DESIGN
+   ========================= */
+
+.contact-page {
+  background: #ffffff;
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.contact-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1.68px;
+  color: #1c1c1e;
+  margin: 0 0 24px;
+}
+
+.contact-hero-content p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #555a6a;
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Section Label */
+.section-label {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #5b76fe;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Contact Container */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 80px;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+  padding-right: 40px;
+}
+
+.contact-info-section h2 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1c1e;
+  margin: 0 0 16px;
+}
+
+.contact-info-section > p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.60;
+  color: #555a6a;
+  margin: 0 0 40px;
+}
+
+/* Contact Details */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.contact-detail-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.detail-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.detail-content h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 4px;
+}
+
+.detail-content p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555a6a;
+  margin: 0;
+}
+
+/* Social Links */
+.contact-social h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #fde0f0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #5b76fe;
+}
+
+.social-link:hover img {
+  filter: brightness(10);
+}
+
+.social-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Form Section */
+.contact-form-section {
+  width: 100%;
+}
+
+.form-card {
+  background: #ffd8f4;
+  border-radius: 24px;
+  padding: 48px;
+}
+
+.form-card h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 32px;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1c1e;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 15px;
+  color: #1c1c1e;
+  background: #ffffff;
+  border: 1px solid #e9eaef;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a5a8b5;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #5b76fe;
+  box-shadow: 0 0 0 3px rgba(91, 118, 254, 0.1);
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23555a6a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.form-group select option {
+  color: #1c1c1e;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  gap: 12px;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: #00b473;
+  border-radius: 50%;
+  font-size: 36px;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.success-message h3 {
+  font-family: 'Roobert PRO', 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 0 0 12px;
+}
+
+.success-message p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  color: #555a6a;
+  margin: 0;
+}
+
+/* Map Section */
+.contact-map {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+.map-card {
+  background: #c3faf5;
+  border-radius: 24px;
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.map-placeholder span {
+  font-size: 48px;
+}
+
+.map-placeholder p {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #1c1c1e;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .contact-info-section {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-hero-content h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+
+  .contact-hero-content p {
+    font-size: 18px;
+  }
+
+  .contact-info-section h2,
+  .form-card h3 {
+    font-size: 28px;
+  }
+
+  .form-card {
+    padding: 32px 24px;
+  }
+
+  .contact-details {
+    gap: 24px;
+  }
+
+  .map-card {
+    padding: 60px 24px;
+  }
+}

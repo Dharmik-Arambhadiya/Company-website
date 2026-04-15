@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roobert+PRO:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+
 body {
     padding: 0;
     margin: 0;
-    font-family: manrope;
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    background: #ffffff;
+    color: #1c1c1e;
 }
 
 * {
@@ -14,39 +18,252 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: Circular;
-    src: url(/font/CircularStd-Medium.otf);
-}
-
-@font-face {
-    font-family: CircularLight;
-    src: url(/font/CircularStd-Light.otf);
-}
-
-@font-face {
-    font-family: CircularBold;
-    src: url(/font/LINETO-CIRCULAR-PRO-BOLD.woff);
-}
-
-@font-face {
-    font-family: CircularMedium;
-    src: url(/font/LINETO-CIRCULAR-PRO-MEDIUM.woff);
-}
+/* =========================
+   🔘 BUTTONS
+   ========================= */
 
 .site-button {
-    font-size: 16px;
-    font-weight: 600;
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 17.5px;
+    font-weight: 700;
+    letter-spacing: 0.175px;
+    line-height: 1.29;
     color: white;
-    background-color: #131623;
-    border-radius: 50px;
+    background-color: #5b76fe;
+    border-radius: 8px;
     text-decoration: none;
-    padding: 11.7px 30px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
 
-    &:hover {
-        img {
-            transition: 0.5s all;
-            transform: rotate(-45deg) scale(1.1);
-        }
-    }
+.site-button:hover {
+    background-color: #2a41b6;
+}
+
+.site-button:hover img {
+    transition: 0.5s all;
+    transform: rotate(-45deg) scale(1.1);
+}
+
+.site-button-outline {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 17.5px;
+    font-weight: 700;
+    letter-spacing: 0.175px;
+    line-height: 1.29;
+    color: #1c1c1e;
+    background-color: transparent;
+    border: 1px solid #c7cad5;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.site-button-outline:hover {
+    border-color: #5b76fe;
+    color: #5b76fe;
+}
+
+/* =========================
+   🔤 TYPOGRAPHY
+   ========================= */
+
+.heading-hero {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -1.68px;
+    color: #1c1c1e;
+}
+
+.heading-section {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -1.44px;
+    color: #1c1c1e;
+}
+
+.heading-card-title {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.72px;
+    color: #1c1c1e;
+}
+
+.heading-subheading {
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.35;
+    letter-spacing: -0.44px;
+    color: #1c1c1e;
+}
+
+.text-body {
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #555a6a;
+}
+
+.text-body-standard {
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.50;
+    letter-spacing: -0.16px;
+    color: #555a6a;
+}
+
+.text-caption {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    color: #555a6a;
+}
+
+.text-small {
+    font-family: 'Roobert PRO', 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.36px;
+    color: #555a6a;
+}
+
+/* =========================
+   🧊 CARDS
+   ========================= */
+
+.card-surface {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: rgb(224, 226, 232) 0px 0px 0px 1px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.card-surface:hover {
+    transform: translateY(-6px);
+}
+
+/* =========================
+   📝 INPUTS
+   ========================= */
+
+.input-standard {
+    background: #ffffff;
+    border: 1px solid #e9eaef;
+    border-radius: 8px;
+    padding: 16px;
+    font-family: 'Noto Sans', 'Inter', sans-serif;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-standard:focus {
+    border-color: #5b76fe;
+}
+
+.input-standard::placeholder {
+    color: #a5a8b5;
+}
+
+/* =========================
+   🎨 UTILITIES
+   ========================= */
+
+.success-text {
+    color: #00b473;
+}
+
+.text-muted {
+    color: #555a6a;
+}
+
+.link-interactive {
+    color: #5b76fe;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.link-interactive:hover {
+    color: #2a41b6;
+}
+
+/* =========================
+   🟢 PASTEL SURFACES
+   ========================= */
+
+.pastel-coral {
+    background-color: #ffc6c6;
+}
+
+.pastel-rose {
+    background-color: #ffd8f4;
+}
+
+.pastel-teal {
+    background-color: #c3faf5;
+}
+
+.pastel-orange {
+    background-color: #ffe6cd;
+}
+
+.pastel-yellow {
+    background-color: #fff5c8;
+}
+
+.pastel-moss {
+    background-color: #d4f0d8;
+}
+
+/* =========================
+   ⬜ SURFACES
+   ========================= */
+
+.surface-white {
+    background-color: #ffffff;
+}
+
+.surface-light {
+    background-color: #f8f9fa;
+}
+
+/* =========================
+   🔗 LINKS
+   ========================= */
+
+.link-dark {
+    color: #1c1c1e;
+    text-decoration: none;
+}
+
+.link-dark:hover {
+    color: #5b76fe;
+}
+
+.link-light {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-light:hover {
+    color: #c3faf5;
 }
