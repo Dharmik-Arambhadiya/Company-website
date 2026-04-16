@@ -62,7 +62,7 @@ export default function Aboutus() {
           </p>
         </div>
         <div className="story-image">
-          <img src="about-hero.png" alt="Redlio Team" />
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop" alt="Redlio Team" />
         </div>
       </div>
 
@@ -99,7 +99,7 @@ export default function Aboutus() {
           {team.map((member, index) => (
             <div key={index} className="team-card">
               <div className="team-image">
-                <img src="about-us.png" alt={member.name} />
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" alt={member.name} />
               </div>
               <div className="team-info">
                 <h3>{member.name}</h3>

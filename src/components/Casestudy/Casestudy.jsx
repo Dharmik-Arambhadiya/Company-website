@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import "./Casestudy.css";
 
 const projects = [
-  { id: 1, title: "E-Commerce Platform", category: "Web Development", icon: "🛒" },
-  { id: 2, title: "SaaS Dashboard", category: "UI/UX Design", icon: "📊" },
-  { id: 3, title: "Mobile App", category: "App Design", icon: "📱" },
+  { id: 1, title: "E-Commerce Platform", category: "Web Development", image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" },
+  { id: 2, title: "SaaS Dashboard", category: "UI/UX Design", image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" },
+  { id: 3, title: "Mobile App", category: "App Design", image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" },
 ];
 
 export default function Casestudy() {
@@ -45,9 +45,7 @@ export default function Casestudy() {
               style={{ animationDelay: `${index * 0.15}s` }}
             >
               <div className="case-image">
-                <div className="case-image-bg">
-                  <span className="case-icon">{item.icon}</span>
-                </div>
+                <img src={item.image} alt={item.title} />
               </div>
 
               <div className="case-content">

@@ -32,8 +32,7 @@ export default function Header() {
     <header className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container nav-flex">
         <Link to="/" className="logo">
-          <span className="logo-text">Redlio</span>
-          <span className="logo-dot"></span>
+          <img src="Header-logo.svg" alt="Redlio" className="logo-img" />
         </Link>
 
         <nav className={menuOpen ? "nav active" : "nav"}>

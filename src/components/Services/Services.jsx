@@ -5,42 +5,42 @@ const services = [
   {
     title: 'Web Development',
     description: 'Custom websites and web applications built with modern technologies for optimal performance and scalability.',
-    icon: '💻',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
     features: ['Custom Web Apps', 'E-commerce Solutions', 'CMS Development', 'API Integration'],
     color: '#c3faf5'
   },
   {
     title: 'Mobile App Development',
     description: 'Native and cross-platform mobile applications that deliver seamless user experiences across all devices.',
-    icon: '📱',
+    image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop',
     features: ['iOS Apps', 'Android Apps', 'React Native', 'App Maintenance'],
     color: '#ffd8f4'
   },
   {
     title: 'UI/UX Design',
     description: 'User-centered design solutions that combine aesthetics with functionality for maximum engagement.',
-    icon: '🎨',
+    image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop',
     features: ['Website Design', 'Mobile App Design', 'Brand Identity', 'Prototyping'],
     color: '#ffe6cd'
   },
   {
     title: 'Digital Marketing',
     description: 'Strategic marketing solutions to boost your online presence and drive measurable business growth.',
-    icon: '📈',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop',
     features: ['SEO Optimization', 'Social Media', 'Content Marketing', 'PPC Advertising'],
     color: '#d4f0d8'
   },
   {
     title: 'Cloud Solutions',
     description: 'Scalable cloud infrastructure and services to power your business applications securely.',
-    icon: '☁️',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=400&h=300&fit=crop',
     features: ['Cloud Migration', 'AWS/Azure', 'Cloud Hosting', 'DevOps'],
     color: '#fff5c8'
   },
   {
     title: 'Enterprise Software',
     description: 'Custom enterprise solutions to streamline your business operations and improve efficiency.',
-    icon: '🏢',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
     features: ['ERP Systems', 'CRM Solutions', 'Automation', 'Data Analytics'],
     color: '#ffc6c6'
   }
@@ -103,7 +103,7 @@ export default function Services() {
             className="service-card"
             style={{ '--card-color': service.color }}
           >
-            <div className="service-icon">{service.icon}</div>
+            <div className="service-icon"><img src={service.image} alt={service.title} /></div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <ul className="service-features">

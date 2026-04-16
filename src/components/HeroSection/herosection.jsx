@@ -73,7 +73,7 @@ export default function HeroSection() {
             <div className="visual-ring ring-2"></div>
             <div className="visual-ring ring-3"></div>
             <div className="visual-content">
-              <div className="visual-icon">⚡</div>
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop" alt="Digital Excellence" className="visual-icon-img" />
               <span>Digital Excellence</span>
             </div>
           </div>
